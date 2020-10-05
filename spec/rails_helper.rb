@@ -64,8 +64,8 @@ RSpec.configure do |config|
   config.include ActionView::Helpers::TextHelper
 
   # Load Custom Helpers
-  config.include PostHelper
-  
+  config.include PostsHelper
+
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end

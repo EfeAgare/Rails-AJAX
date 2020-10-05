@@ -10,6 +10,12 @@ require 'rails_helper'
 #     end
 #   end
 # end
-RSpec.describe PostsHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+RSpec.describe PostHelper, type: :helper do
+  describe "post_excerpt" do
+    string = "i" * 51
+    let(:post) { FactoryBot.build(:post, body: string ) }
+    it "truncates the first 50 characters of a string" do
+      expect( post_excerpt(post) ).to eq( string.chars.first(47).join + "..." );
+    end
+  end
 end
