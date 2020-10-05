@@ -73,6 +73,7 @@ GEM
       xpath (~> 3.2)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    database_cleaner (1.7.0)
     diff-lcs (1.4.4)
     erubi (1.9.0)
     ffi (1.13.1)
@@ -212,6 +213,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (~> 3.29)
+  database_cleaner (~> 1.7)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
